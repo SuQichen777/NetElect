@@ -1,0 +1,75 @@
+{
+  "transport": "grpc",
+  "rpc_timeout": "400ms",
+  "nodes": [
+    {
+      "id": 0,
+      "listen": "clnode005.clemson.cloudlab.us:7000",
+      "fault": {
+        "outbound_delay_min_ms": 30,
+        "outbound_delay_max_ms": 40,
+        "inbound_ping_delay_min_ms": 0,
+        "inbound_ping_delay_max_ms": 0,
+        "delay_start_after_s": 5.0
+      }
+    },
+    {
+      "id": 1,
+      "listen": "clnode002.clemson.cloudlab.us:7000",
+      "fault": {
+        "outbound_delay_min_ms": 30,
+        "outbound_delay_max_ms": 40,
+        "inbound_ping_delay_min_ms": 0,
+        "inbound_ping_delay_max_ms": 0,
+        "delay_start_after_s": 5.0
+      }
+    },
+    {
+      "id": 2,
+      "listen": "clnode008.clemson.cloudlab.us:7000",
+      "fault": {
+        "outbound_delay_min_ms": 10,
+        "outbound_delay_max_ms": 20,
+        "inbound_ping_delay_min_ms": 0,
+        "inbound_ping_delay_max_ms": 0,
+        "delay_start_after_s": 5.0
+      }
+    },
+    {
+      "id": 3,
+      "listen": "clnode004.clemson.cloudlab.us:7000",
+      "fault": {
+        "outbound_delay_min_ms": 10,
+        "outbound_delay_max_ms": 20,
+        "inbound_ping_delay_min_ms": 0,
+        "inbound_ping_delay_max_ms": 0,
+        "delay_start_after_s": 5.0
+      }
+    },
+    {
+      "id": 4,
+      "listen": "clnode016.clemson.cloudlab.us:7000",
+      "fault": {
+        "outbound_delay_min_ms": 10,
+        "outbound_delay_max_ms": 20,
+        "inbound_ping_delay_min_ms": 0,
+        "inbound_ping_delay_max_ms": 0,
+        "delay_start_after_s": 5.0
+      }
+    }
+  ],
+  "benchmark": {
+    "workers": 128,
+    "duration": "30s",
+    "timeout": "250ms",
+    "sample_cap": 200000,
+    "mode": "read",
+    "csv_output": "results.csv"
+  },
+  "netelect": {
+    "enabled": false,
+    "initial_eligible_leaders": [
+      0
+    ]
+  }
+}

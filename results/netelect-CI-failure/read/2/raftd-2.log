@@ -1,0 +1,31 @@
+raftd up: id=2 transport=grpc listen=clnode013.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+[election_start] node=2 term=2 ts=1780950051091 detect_ms=162.9
+[leader_elected] node=2 term=2 ts=1780950051091
+fault_stepdown: node=2 term=2 stepped=true ts=1780950058111
+[election_start] node=2 term=4 ts=1780950065501 detect_ms=165.6
+[leader_elected] node=2 term=4 ts=1780950065502
+fault_stepdown: node=2 term=4 stepped=true ts=1780950072502
+[election_start] node=2 term=7 ts=1780950087033 detect_ms=168.8
+[leader_elected] node=2 term=7 ts=1780950087033
+fault_stepdown: node=2 term=7 stepped=true ts=1780950094034
+[election_start] node=2 term=9 ts=1780950101412 detect_ms=174.2
+[leader_elected] node=2 term=9 ts=1780950101413
+fault_stepdown: node=2 term=9 stepped=true ts=1780950108413
+[election_start] node=2 term=11 ts=1780950115791 detect_ms=172.3
+[leader_elected] node=2 term=11 ts=1780950115791
+fault_stepdown: node=2 term=11 stepped=true ts=1780950122793
+[election_start] node=2 term=12 ts=1780950122957 detect_ms=164.0
+[leader_elected] node=2 term=12 ts=1780950122958
+fault_stepdown: node=2 term=12 stepped=true ts=1780950129958
+[election_start] node=2 term=14 ts=1780950137312 detect_ms=155.5
+[leader_elected] node=2 term=14 ts=1780950137312
+fault_stepdown: node=2 term=14 stepped=true ts=1780950144313
+[election_start] node=2 term=16 ts=1780950151694 detect_ms=161.6
+[leader_elected] node=2 term=16 ts=1780950151694
+fault_stepdown: node=2 term=16 stepped=true ts=1780950158695
+[election_start] node=2 term=17 ts=1780950158890 detect_ms=195.0
+[leader_elected] node=2 term=17 ts=1780950158890
+fault_stepdown: node=2 term=17 stepped=true ts=1780950165894
+[election_start] node=2 term=19 ts=1780950173289 detect_ms=175.8
+[leader_elected] node=2 term=19 ts=1780950173289
+fault_stepdown: node=2 term=19 stepped=true ts=1780950180290

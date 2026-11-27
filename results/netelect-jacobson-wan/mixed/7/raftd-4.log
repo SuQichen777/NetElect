@@ -1,0 +1,41 @@
+raftd up: id=4 transport=grpc listen=clnode005.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+[status]      node=4 term=0 role=follower
+fault_latency_active: node=4 outbound_delay=33ms inbound_ping_delay=0ms random=true
+[petition_recv] node=4 term=5 from=1 rtt_reported=50.3ms count=1 needed=2
+[status]      node=4 term=18 role=follower
+[election]    node=4 term=18→61
+[status]      node=4 term=61 role=follower
+[election]    node=4 term=61→113
+[status]      node=4 term=113 role=follower
+[election]    node=4 term=113→164
+[status]      node=4 term=164 role=follower
+[petition_send] node=4 term=214 leader=1 proposed=3 rtt_to_leader=104.9ms
+[election]    node=4 term=164→214
+[status]      node=4 term=214 role=follower
+[petition_send] node=4 term=214 leader=1 proposed=3 rtt_to_leader=105.1ms
+[petition_send] node=4 term=214 leader=1 proposed=3 rtt_to_leader=105.1ms
+[petition_send] node=4 term=214 leader=1 proposed=3 rtt_to_leader=105.2ms
+[petition_send] node=4 term=226 leader=1 proposed=3 rtt_to_leader=105.0ms
+[petition_send] node=4 term=226 leader=1 proposed=3 rtt_to_leader=105.0ms
+[petition_send] node=4 term=228 leader=1 proposed=3 rtt_to_leader=104.8ms
+[petition_send] node=4 term=228 leader=1 proposed=3 rtt_to_leader=104.8ms
+[petition_send] node=4 term=229 leader=1 proposed=3 rtt_to_leader=104.8ms
+[petition_send] node=4 term=230 leader=1 proposed=3 rtt_to_leader=105.0ms
+[petition_send] node=4 term=231 leader=1 proposed=3 rtt_to_leader=105.0ms
+[petition_send] node=4 term=243 leader=0 proposed=3 rtt_to_leader=108.9ms
+[petition_send] node=4 term=244 leader=0 proposed=3 rtt_to_leader=109.0ms
+[petition_send] node=4 term=246 leader=1 proposed=3 rtt_to_leader=105.0ms
+[election]    node=4 term=214→250
+[status]      node=4 term=250 role=follower
+[petition_send] node=4 term=260 leader=1 proposed=3 rtt_to_leader=105.1ms
+[petition_send] node=4 term=278 leader=1 proposed=3 rtt_to_leader=105.2ms
+[election]    node=4 term=250→284
+[status]      node=4 term=284 role=follower
+[petition_send] node=4 term=286 leader=1 proposed=3 rtt_to_leader=105.0ms
+[petition_send] node=4 term=286 leader=1 proposed=3 rtt_to_leader=104.9ms
+[petition_send] node=4 term=288 leader=1 proposed=3 rtt_to_leader=105.3ms
+[election]    node=4 term=284→325
+[status]      node=4 term=325 role=follower
+[petition_send] node=4 term=341 leader=1 proposed=3 rtt_to_leader=105.1ms
+[petition_send] node=4 term=341 leader=1 proposed=3 rtt_to_leader=105.0ms
+election_msgs: node=4 sent=888 recv=758

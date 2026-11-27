@@ -1,0 +1,21 @@
+{
+    "nb_clients": 5,
+    "nb_servers": 5,
+    "label": "netelect-CI-wan",
+    "mode": "mixed",
+    "read_ratio": 0.8,
+    "fault_type": "wan_tiered_delayed",
+    "far_nodes": [0, 1],
+    "far_outbound_delay_min_ms": 60,
+    "far_outbound_delay_max_ms": 80,
+    "far_inbound_ping_delay_min_ms": 60,
+    "far_inbound_ping_delay_max_ms": 80,
+    "near_nodes": [2, 3, 4],
+    "near_outbound_delay_min_ms": 20,
+    "near_outbound_delay_max_ms": 40,
+    "near_inbound_ping_delay_min_ms": 0,
+    "near_inbound_ping_delay_max_ms": 0,
+    "delay_start_after_s": 5.0,
+    "netelect_enabled": true,
+    "fd_mode": "CI"
+}

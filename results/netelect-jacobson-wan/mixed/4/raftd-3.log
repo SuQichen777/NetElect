@@ -1,0 +1,19 @@
+fault_latency_active: node=3 outbound_delay=27ms inbound_ping_delay=26ms random=true
+raftd up: id=3 transport=grpc listen=clstore04.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+[status]      node=3 term=0 role=follower
+[status]      node=3 term=29 role=follower
+[election]    node=3 term=29→50
+[status]      node=3 term=50 role=follower
+[election]    node=3 term=50→57
+[status]      node=3 term=57 role=follower
+[election]    node=3 term=57→88
+[status]      node=3 term=88 role=follower
+[election]    node=3 term=88→118
+[status]      node=3 term=118 role=follower
+[election]    node=3 term=118→141
+[status]      node=3 term=141 role=follower
+[election]    node=3 term=141→159
+[status]      node=3 term=159 role=follower
+[election]    node=3 term=159→172
+[status]      node=3 term=172 role=follower
+election_msgs: node=3 sent=280 recv=282

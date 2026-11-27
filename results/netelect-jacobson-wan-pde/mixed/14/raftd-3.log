@@ -1,0 +1,13 @@
+raftd up: id=3 transport=grpc listen=clnode004.clemson.cloudlab.us:7000 peers=clnode005.clemson.cloudlab.us:7000,clnode002.clemson.cloudlab.us:7000,clnode008.clemson.cloudlab.us:7000,clnode004.clemson.cloudlab.us:7000,clnode016.clemson.cloudlab.us:7000
+fault_latency_active: node=3 outbound_delay=18ms inbound_ping_delay=0ms random=true
+[election_start] node=3 term=2 ts=1782186964384 detect_ms=100.4
+[leader_elected] node=3 term=2 ts=1782186964404
+[petition_send] node=3 term=5 leader=2 proposed=4 rtt_to_leader=20.2ms
+[petition_send] node=3 term=6 leader=2 proposed=4 rtt_to_leader=19.9ms
+[election_start] node=3 term=8 ts=1782186981167 detect_ms=144.9
+[leader_elected] node=3 term=8 ts=1782186981187
+[petition_send] node=3 term=11 leader=2 proposed=4 rtt_to_leader=19.2ms
+[petition_send] node=3 term=12 leader=2 proposed=4 rtt_to_leader=19.4ms
+[election_start] node=3 term=13 ts=1782186998022 detect_ms=128.9
+[leader_elected] node=3 term=13 ts=1782186998058
+election_msgs: node=3 sent=12 recv=14

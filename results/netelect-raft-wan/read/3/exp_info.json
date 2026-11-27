@@ -1,0 +1,18 @@
+{
+    "nb_clients": 5,
+    "nb_servers": 5,
+    "label": "netelect-raft-wan",
+    "mode": "read",
+    "read_ratio": 0.8,
+    "fault_type": "wan_tiered",
+    "far_nodes": [0, 1],
+    "far_outbound_delay_min_ms": 60,
+    "far_outbound_delay_max_ms": 80,
+    "near_nodes": [2, 3, 4],
+    "near_outbound_delay_min_ms": 20,
+    "near_outbound_delay_max_ms": 40,
+    "inbound_ping_delay_min_ms": 0,
+    "inbound_ping_delay_max_ms": 0,
+    "netelect_enabled": true,
+    "fd_mode": "raft"
+}

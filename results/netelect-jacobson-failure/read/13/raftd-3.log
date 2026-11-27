@@ -1,0 +1,128 @@
+raftd up: id=3 transport=grpc listen=clstore04.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+fault_latency_active: node=3 outbound_delay=5ms inbound_ping_delay=0ms random=false
+[election_start] node=3 term=4 ts=1780947896714 detect_ms=222.9
+[leader_elected] node=3 term=4 ts=1780947896720
+fault_stepdown: node=3 term=4 stepped=true ts=1780947903721
+[election_start] node=3 term=6 ts=1780947911137 detect_ms=222.8
+[election_start] node=3 term=7 ts=1780947918335 detect_ms=214.0
+[leader_elected] node=3 term=7 ts=1780947918341
+fault_stepdown: node=3 term=7 stepped=true ts=1780947925342
+[election_start] node=3 term=9 ts=1780947932708 detect_ms=198.7
+[leader_elected] node=3 term=9 ts=1780947932714
+fault_stepdown: node=3 term=9 stepped=true ts=1780947939717
+[election_start] node=3 term=12 ts=1780947954281 detect_ms=200.2
+[leader_elected] node=3 term=12 ts=1780947954287
+fault_stepdown: node=3 term=12 stepped=true ts=1780947961287
+[election_start] node=3 term=14 ts=1780947968640 detect_ms=213.1
+[leader_elected] node=3 term=14 ts=1780947968646
+fault_stepdown: node=3 term=14 stepped=true ts=1780947975646
+[election_start] node=3 term=16 ts=1780947983040 detect_ms=213.1
+[leader_elected] node=3 term=16 ts=1780947983047
+fault_stepdown: node=3 term=16 stepped=true ts=1780947990051
+[election_start] node=3 term=19 ts=1780948004626 detect_ms=196.3
+[leader_elected] node=3 term=19 ts=1780948004632
+fault_stepdown: node=3 term=19 stepped=true ts=1780948011632
+[election_start] node=3 term=21 ts=1780948018946 detect_ms=189.0
+[leader_elected] node=3 term=21 ts=1780948018952
+fault_stepdown: node=3 term=21 stepped=true ts=1780948025952
+[election_start] node=3 term=23 ts=1780948033343 detect_ms=207.9
+[leader_elected] node=3 term=23 ts=1780948033350
+fault_stepdown: node=3 term=23 stepped=true ts=1780948040350
+[election_start] node=3 term=25 ts=1780948047736 detect_ms=210.2
+[leader_elected] node=3 term=25 ts=1780948047743
+fault_stepdown: node=3 term=25 stepped=true ts=1780948054743
+[election_start] node=3 term=27 ts=1780948062109 detect_ms=201.0
+[leader_elected] node=3 term=27 ts=1780948062116
+fault_stepdown: node=3 term=27 stepped=true ts=1780948069116
+[election_start] node=3 term=29 ts=1780948076486 detect_ms=215.9
+[leader_elected] node=3 term=29 ts=1780948076492
+fault_stepdown: node=3 term=29 stepped=true ts=1780948083492
+[election_start] node=3 term=31 ts=1780948090892 detect_ms=209.9
+[leader_elected] node=3 term=31 ts=1780948090897
+fault_stepdown: node=3 term=31 stepped=true ts=1780948097898
+[election_start] node=3 term=33 ts=1780948105258 detect_ms=196.6
+[leader_elected] node=3 term=33 ts=1780948105264
+fault_stepdown: node=3 term=33 stepped=true ts=1780948112265
+[election_start] node=3 term=35 ts=1780948119605 detect_ms=200.4
+[leader_elected] node=3 term=35 ts=1780948119611
+fault_stepdown: node=3 term=35 stepped=true ts=1780948126611
+[election_start] node=3 term=37 ts=1780948133992 detect_ms=202.8
+[leader_elected] node=3 term=37 ts=1780948133998
+fault_stepdown: node=3 term=37 stepped=true ts=1780948140999
+[election_start] node=3 term=39 ts=1780948148385 detect_ms=210.6
+[leader_elected] node=3 term=39 ts=1780948148391
+fault_stepdown: node=3 term=39 stepped=true ts=1780948155392
+[election_start] node=3 term=41 ts=1780948162738 detect_ms=212.2
+[leader_elected] node=3 term=41 ts=1780948162744
+fault_stepdown: node=3 term=41 stepped=true ts=1780948169744
+[election_start] node=3 term=43 ts=1780948177109 detect_ms=189.6
+[leader_elected] node=3 term=43 ts=1780948177115
+fault_stepdown: node=3 term=43 stepped=true ts=1780948184115
+[election_start] node=3 term=45 ts=1780948191512 detect_ms=207.9
+[leader_elected] node=3 term=45 ts=1780948191517
+fault_stepdown: node=3 term=45 stepped=true ts=1780948198518
+[election_start] node=3 term=47 ts=1780948205887 detect_ms=214.2
+[leader_elected] node=3 term=47 ts=1780948205893
+fault_stepdown: node=3 term=47 stepped=true ts=1780948212893
+[election_start] node=3 term=49 ts=1780948220249 detect_ms=195.8
+[leader_elected] node=3 term=49 ts=1780948220255
+fault_stepdown: node=3 term=49 stepped=true ts=1780948227255
+[election_start] node=3 term=52 ts=1780948241807 detect_ms=216.9
+[election_start] node=3 term=53 ts=1780948249013 detect_ms=213.7
+[leader_elected] node=3 term=53 ts=1780948249019
+fault_stepdown: node=3 term=53 stepped=true ts=1780948256019
+[election_start] node=3 term=55 ts=1780948263388 detect_ms=212.7
+[leader_elected] node=3 term=55 ts=1780948263395
+fault_stepdown: node=3 term=55 stepped=true ts=1780948270395
+[election_start] node=3 term=57 ts=1780948277782 detect_ms=208.5
+[leader_elected] node=3 term=57 ts=1780948277790
+fault_stepdown: node=3 term=57 stepped=true ts=1780948284791
+[election_start] node=3 term=59 ts=1780948292151 detect_ms=206.0
+[leader_elected] node=3 term=59 ts=1780948292157
+fault_stepdown: node=3 term=59 stepped=true ts=1780948299157
+[election_start] node=3 term=61 ts=1780948306510 detect_ms=215.3
+[leader_elected] node=3 term=61 ts=1780948306516
+fault_stepdown: node=3 term=61 stepped=true ts=1780948313517
+[election_start] node=3 term=63 ts=1780948320934 detect_ms=223.5
+[leader_elected] node=3 term=63 ts=1780948320941
+fault_stepdown: node=3 term=63 stepped=true ts=1780948327941
+[election_start] node=3 term=65 ts=1780948335295 detect_ms=198.5
+[leader_elected] node=3 term=65 ts=1780948335301
+fault_stepdown: node=3 term=65 stepped=true ts=1780948342302
+[election_start] node=3 term=67 ts=1780948349673 detect_ms=211.2
+[leader_elected] node=3 term=67 ts=1780948349679
+fault_stepdown: node=3 term=67 stepped=true ts=1780948356679
+[election_start] node=3 term=69 ts=1780948364069 detect_ms=207.3
+[election_start] node=3 term=70 ts=1780948371291 detect_ms=214.7
+[leader_elected] node=3 term=70 ts=1780948371297
+fault_stepdown: node=3 term=70 stepped=true ts=1780948378297
+[election_start] node=3 term=72 ts=1780948385677 detect_ms=207.8
+[leader_elected] node=3 term=72 ts=1780948385683
+fault_stepdown: node=3 term=72 stepped=true ts=1780948392684
+[election_start] node=3 term=74 ts=1780948400030 detect_ms=199.6
+[leader_elected] node=3 term=74 ts=1780948400036
+fault_stepdown: node=3 term=74 stepped=true ts=1780948407036
+[election_start] node=3 term=76 ts=1780948414404 detect_ms=197.9
+[leader_elected] node=3 term=76 ts=1780948414410
+fault_stepdown: node=3 term=76 stepped=true ts=1780948421410
+[election_start] node=3 term=78 ts=1780948428804 detect_ms=211.3
+[leader_elected] node=3 term=78 ts=1780948428810
+fault_stepdown: node=3 term=78 stepped=true ts=1780948435811
+[election_start] node=3 term=80 ts=1780948443188 detect_ms=194.9
+[leader_elected] node=3 term=80 ts=1780948443195
+fault_stepdown: node=3 term=80 stepped=true ts=1780948450195
+[election_start] node=3 term=83 ts=1780948464780 detect_ms=202.5
+[leader_elected] node=3 term=83 ts=1780948464786
+fault_stepdown: node=3 term=83 stepped=true ts=1780948471787
+[election_start] node=3 term=85 ts=1780948479153 detect_ms=212.9
+[leader_elected] node=3 term=85 ts=1780948479159
+fault_stepdown: node=3 term=85 stepped=true ts=1780948486160
+[election_start] node=3 term=87 ts=1780948493551 detect_ms=216.1
+[leader_elected] node=3 term=87 ts=1780948493557
+fault_stepdown: node=3 term=87 stepped=true ts=1780948500560
+[election_start] node=3 term=89 ts=1780948507935 detect_ms=199.8
+[leader_elected] node=3 term=89 ts=1780948507947
+fault_stepdown: node=3 term=89 stepped=true ts=1780948514947
+[election_start] node=3 term=91 ts=1780948522345 detect_ms=221.5
+[leader_elected] node=3 term=91 ts=1780948522352
+fault_stepdown: node=3 term=91 stepped=true ts=1780948529352

@@ -1,0 +1,32 @@
+raftd up: id=2 transport=grpc listen=clnode013.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+[election_start] node=2 term=6 ts=1780943591006 detect_ms=223.5
+[election_start] node=2 term=7 ts=1780943598195 detect_ms=199.4
+[leader_elected] node=2 term=7 ts=1780943598195
+fault_stepdown: node=2 term=7 stepped=true ts=1780943605196
+[election_start] node=2 term=9 ts=1780943612559 detect_ms=167.8
+[leader_elected] node=2 term=9 ts=1780943612560
+fault_stepdown: node=2 term=9 stepped=true ts=1780943619560
+[election_start] node=2 term=11 ts=1780943627005 detect_ms=219.6
+[election_start] node=2 term=14 ts=1780943648490 detect_ms=153.3
+[leader_elected] node=2 term=14 ts=1780943648491
+fault_stepdown: node=2 term=14 stepped=true ts=1780943655491
+[election_start] node=2 term=15 ts=1780943655684 detect_ms=193.0
+[leader_elected] node=2 term=15 ts=1780943655685
+fault_stepdown: node=2 term=15 stepped=true ts=1780943662685
+[election_start] node=2 term=22 ts=1780943706082 detect_ms=168.0
+[leader_elected] node=2 term=22 ts=1780943706083
+fault_stepdown: node=2 term=22 stepped=true ts=1780943713083
+[election_start] node=2 term=26 ts=1780943734815 detect_ms=150.1
+[leader_elected] node=2 term=26 ts=1780943734816
+fault_stepdown: node=2 term=26 stepped=true ts=1780943741817
+[election_start] node=2 term=32 ts=1780943778008 detect_ms=206.4
+[leader_elected] node=2 term=32 ts=1780943778008
+fault_stepdown: node=2 term=32 stepped=true ts=1780943785009
+[election_start] node=2 term=41 ts=1780943842887 detect_ms=203.9
+[leader_elected] node=2 term=41 ts=1780943842888
+fault_stepdown: node=2 term=41 stepped=true ts=1780943849888
+[election_start] node=2 term=43 ts=1780943857305 detect_ms=197.3
+[leader_elected] node=2 term=43 ts=1780943857306
+fault_stepdown: node=2 term=43 stepped=true ts=1780943864306
+[election_start] node=2 term=46 ts=1780943878895 detect_ms=167.9
+[leader_elected] node=2 term=46 ts=1780943878896

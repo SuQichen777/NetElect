@@ -1,0 +1,27 @@
+raftd up: id=3 transport=grpc listen=clstore04.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+[status]      node=3 term=0 role=follower
+fault_latency_active: node=3 outbound_delay=28ms inbound_ping_delay=0ms random=true
+[status]      node=3 term=1 role=follower
+[status]      node=3 term=1 role=follower
+[status]      node=3 term=1 role=follower
+[status]      node=3 term=1 role=follower
+[status]      node=3 term=1 role=follower
+[election]    node=3 term=1→2
+[status]      node=3 term=2 role=follower
+[status]      node=3 term=2 role=follower
+[petition_stepdown] node=3 term=5 forced_by=2
+[petition_recv] node=3 term=8 from=0 rtt_reported=63.3ms count=1 needed=2
+[petition_recv] node=3 term=8 from=1 rtt_reported=79.2ms count=2 needed=2
+[petition_accept] node=3 term=8 petitioners=2 force_stepdown_leader=2
+[election]    node=3 term=2→8
+[status]      node=3 term=8 role=follower
+[petition_recv] node=3 term=9 from=0 rtt_reported=63.3ms count=1 needed=2
+[petition_recv] node=3 term=9 from=1 rtt_reported=79.1ms count=2 needed=2
+[petition_accept] node=3 term=9 petitioners=2 force_stepdown_leader=2
+[petition_stepdown] node=3 term=12 forced_by=2
+[petition_recv] node=3 term=13 from=1 rtt_reported=79.3ms count=1 needed=2
+[petition_recv] node=3 term=13 from=0 rtt_reported=63.4ms count=2 needed=2
+[petition_accept] node=3 term=13 petitioners=2 force_stepdown_leader=2
+[petition_stepdown] node=3 term=16 forced_by=2
+[petition_stepdown] node=3 term=18 forced_by=2
+election_msgs: node=3 sent=39 recv=41

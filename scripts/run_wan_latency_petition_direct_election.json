@@ -1,0 +1,20 @@
+{
+    "user": "Jiaxi",
+    "ips": [
+        "clnode005.clemson.cloudlab.us",
+        "clnode002.clemson.cloudlab.us",
+        "clnode008.clemson.cloudlab.us",
+        "clnode004.clemson.cloudlab.us",
+        "clnode016.clemson.cloudlab.us"
+    ],
+    "nb_servers": 5,
+    "csv": "results.csv",
+    "timeseries_csv": "timeseries.csv",
+    "timeseries_interval": "1s",
+    "read_ratio": 0.8,
+    "mixed_runs": 20,
+    "read_runs": 20,
+    "startup_settle_s": 5,
+    "run_settle_s": 2,
+    "_comment": "Same tiered-WAN setup as run_wan_latency_sweep.json, but the netelect groups run with petition_direct_election=true: when a petition is accepted, the proposed leader (majority-petition receiver) immediately starts its own election instead of forcing the old leader down and waiting for an election timeout. This removes the timeout race where a non-receiver node occasionally wins, so the post-petition leader should match the proposed leader far more reliably. Uses config/cluster.*.wan.pde.json. Compare against the baseline run_wan_latency_sweep (petition_direct_election=false) on migration-success-rate / which node wins / election-message count. The raft baseline group is identical to the baseline sweep (netelect disabled, petition not used)."
+}

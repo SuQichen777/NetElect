@@ -1,0 +1,41 @@
+raftd up: id=2 transport=grpc listen=clnode013.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+[status]      node=2 term=0 role=follower
+fault_latency_active: node=2 outbound_delay=30ms inbound_ping_delay=0ms random=true
+[petition_recv] node=2 term=2 from=0 rtt_reported=52.0ms count=1 needed=2
+[petition_stepdown] node=2 term=5 forced_by=3
+[petition_stepdown] node=2 term=9 forced_by=3
+[status]      node=2 term=10 role=follower
+[petition_stepdown] node=2 term=11 forced_by=3
+[petition_stepdown] node=2 term=22 forced_by=3
+[petition_recv] node=2 term=31 from=1 rtt_reported=62.1ms count=1 needed=2
+[petition_recv] node=2 term=31 from=0 rtt_reported=70.0ms count=2 needed=2
+[petition_accept] node=2 term=31 petitioners=2 force_stepdown_leader=3
+[election]    node=2 term=10→34
+[status]      node=2 term=34 role=follower
+[petition_stepdown] node=2 term=40 forced_by=3
+[petition_stepdown] node=2 term=51 forced_by=3
+[petition_stepdown] node=2 term=66 forced_by=3
+[election]    node=2 term=34→68
+[status]      node=2 term=68 role=follower
+[petition_stepdown] node=2 term=74 forced_by=3
+[petition_recv] node=2 term=78 from=1 rtt_reported=62.2ms count=1 needed=2
+[petition_recv] node=2 term=78 from=0 rtt_reported=70.2ms count=2 needed=2
+[petition_accept] node=2 term=78 petitioners=2 force_stepdown_leader=3
+[petition_stepdown] node=2 term=79 forced_by=3
+[election]    node=2 term=68→93
+[status]      node=2 term=93 role=follower
+[election]    node=2 term=93→117
+[status]      node=2 term=117 role=follower
+[petition_stepdown] node=2 term=134 forced_by=3
+[petition_stepdown] node=2 term=136 forced_by=3
+[election]    node=2 term=117→141
+[status]      node=2 term=141 role=follower
+[petition_stepdown] node=2 term=148 forced_by=3
+[petition_stepdown] node=2 term=156 forced_by=3
+[election]    node=2 term=141→166
+[status]      node=2 term=166 role=follower
+[petition_stepdown] node=2 term=182 forced_by=3
+[petition_stepdown] node=2 term=184 forced_by=3
+[election]    node=2 term=166→190
+[status]      node=2 term=190 role=follower
+election_msgs: node=2 sent=370 recv=242

@@ -1,0 +1,20 @@
+{
+    "user": "Jiaxi",
+    "ips": [
+        "clnode005.clemson.cloudlab.us",
+        "clnode002.clemson.cloudlab.us",
+        "clnode008.clemson.cloudlab.us",
+        "clnode004.clemson.cloudlab.us",
+        "clnode016.clemson.cloudlab.us"
+    ],
+    "nb_servers": 5,
+    "csv": "results.csv",
+    "timeseries_csv": "timeseries.csv",
+    "timeseries_interval": "200ms",
+    "read_ratio": 0.8,
+    "mixed_runs": 20,
+    "read_runs": 20,
+    "startup_settle_s": 5,
+    "run_settle_s": 2,
+    "_comment": "all 5 nodes carry leader_stepdown_after_s=7 (recurring): every elected leader steps down ~7s after winning, so each 30s run sees repeated failover (~4 crashes). Both mixed and read phases experience crashes, so no per-run server restart is needed in the read phase."
+}

@@ -1,0 +1,20 @@
+{
+    "user": "Jiaxi",
+    "ips": [
+        "clnode005.clemson.cloudlab.us",
+        "clnode002.clemson.cloudlab.us",
+        "clnode008.clemson.cloudlab.us",
+        "clnode004.clemson.cloudlab.us",
+        "clnode016.clemson.cloudlab.us"
+    ],
+    "nb_servers": 5,
+    "csv": "results.csv",
+    "timeseries_csv": "timeseries.csv",
+    "timeseries_interval": "1s",
+    "read_ratio": 0.8,
+    "mixed_runs": 20,
+    "read_runs": 20,
+    "startup_settle_s": 5,
+    "run_settle_s": 2,
+    "_comment": "Fault-free baseline benchmark: re-validates raft vs the three netelect variants after the implementation changes (WithNetElect honoring enabled, penalty-based petition trigger, penalty-margin gate, [leader_elected] logging). No latency injection, so all nodes are equal and netelect should NOT migrate or petition — this isolates the steady-state OVERHEAD of the netelect machinery (ping/penalty loops) vs plain raft. Results to results/<label>/{mixed,read}/<run>/ with per-node server logs + timeseries."
+}

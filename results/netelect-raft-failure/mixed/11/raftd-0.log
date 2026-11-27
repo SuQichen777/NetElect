@@ -1,0 +1,12 @@
+raftd up: id=0 transport=grpc listen=clstore03.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+[election_start] node=0 term=1 ts=1780945164865 detect_ms=245.9
+[leader_elected] node=0 term=1 ts=1780945164866
+fault_latency_active: node=0 outbound_delay=20ms inbound_ping_delay=0ms random=false
+fault_stepdown: node=0 term=1 stepped=true ts=1780945171866
+[election_start] node=0 term=3 ts=1780945179191 detect_ms=160.9
+[leader_elected] node=0 term=3 ts=1780945179229
+fault_stepdown: node=0 term=3 stepped=true ts=1780945186254
+[election_start] node=0 term=5 ts=1780945193639 detect_ms=169.9
+[leader_elected] node=0 term=5 ts=1780945193666
+fault_stepdown: node=0 term=5 stepped=true ts=1780945200666
+election_msgs: node=0 sent=12 recv=5

@@ -1,0 +1,11 @@
+{
+    "user": "Jiaxi",
+    "ips": [
+        "clnode005.clemson.cloudlab.us",
+        "clnode002.clemson.cloudlab.us",
+        "clnode008.clemson.cloudlab.us",
+        "clnode004.clemson.cloudlab.us",
+        "clnode016.clemson.cloudlab.us"
+    ],
+    "config": "config/cluster.grpc.json"
+}

@@ -32,3 +32,11 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# Build output
+/bin/
+
+# Python / OS / tooling
+__pycache__/
+.DS_Store
+.claude/

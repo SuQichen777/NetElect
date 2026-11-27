@@ -1,0 +1,20 @@
+{
+    "user": "Jiaxi",
+    "ips": [
+        "clnode005.clemson.cloudlab.us",
+        "clnode002.clemson.cloudlab.us",
+        "clnode008.clemson.cloudlab.us",
+        "clnode004.clemson.cloudlab.us",
+        "clnode016.clemson.cloudlab.us"
+    ],
+    "nb_servers": 5,
+    "csv": "results.csv",
+    "timeseries_csv": "timeseries.csv",
+    "timeseries_interval": "1s",
+    "read_ratio": 0.8,
+    "mixed_runs": 20,
+    "read_runs": 20,
+    "startup_settle_s": 5,
+    "run_settle_s": 2,
+    "_comment": "Tiered WAN (outbound only, inbound_ping=0 so RTT=follower.outbound): far(0,1) outbound=[30,40]ms; near(2,3,4) outbound=[10,20]ms. latency_threshold_ms=25 sits between near-max(20) and far-min(30): far followers petition, near don't. petition_penalty_margin_ms=0 gates petitions to only fire toward a lower-penalty node, so leadership migrates once to the fastest near node and stays. delay_start_after_s=5: node0 (initial_eligible_leaders=[0]) leads at zero delay first, then at t=5s delays activate and node0 is petitioned away. heartbeat_interval_margin_ms=80, rpc_timeout=400ms, workers=128, client timeout=250ms."
+}

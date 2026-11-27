@@ -1,0 +1,130 @@
+raftd up: id=2 transport=grpc listen=clnode013.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+fault_latency_active: node=2 outbound_delay=24ms inbound_ping_delay=0ms random=true
+[petition_recv] node=2 term=1 from=1 rtt_reported=54.3ms count=1 needed=2
+[petition_recv] node=2 term=2 from=1 rtt_reported=63.8ms count=1 needed=2
+[petition_recv] node=2 term=2 from=0 rtt_reported=71.5ms count=2 needed=2
+[petition_accept] node=2 term=2 petitioners=2 force_stepdown_leader=1
+[petition_recv] node=2 term=3 from=0 rtt_reported=72.4ms count=1 needed=2
+[petition_recv] node=2 term=3 from=1 rtt_reported=67.2ms count=2 needed=2
+[petition_accept] node=2 term=3 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=4 from=0 rtt_reported=73.4ms count=1 needed=2
+[petition_recv] node=2 term=4 from=1 rtt_reported=67.8ms count=2 needed=2
+[petition_accept] node=2 term=4 petitioners=2 force_stepdown_leader=4
+[petition_recv] node=2 term=5 from=0 rtt_reported=74.1ms count=1 needed=2
+[petition_recv] node=2 term=5 from=1 rtt_reported=68.0ms count=2 needed=2
+[petition_accept] node=2 term=5 petitioners=2 force_stepdown_leader=4
+[petition_recv] node=2 term=6 from=1 rtt_reported=67.9ms count=1 needed=2
+[petition_recv] node=2 term=6 from=0 rtt_reported=74.1ms count=2 needed=2
+[petition_accept] node=2 term=6 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=8 from=1 rtt_reported=67.9ms count=1 needed=2
+[petition_recv] node=2 term=8 from=0 rtt_reported=74.0ms count=2 needed=2
+[petition_accept] node=2 term=8 petitioners=2 force_stepdown_leader=3
+[leader_elected] node=2 term=9
+[petition_stepdown] node=2 term=9 forced_by=3
+[petition_recv] node=2 term=11 from=1 rtt_reported=68.0ms count=1 needed=2
+[petition_recv] node=2 term=11 from=0 rtt_reported=73.8ms count=2 needed=2
+[petition_accept] node=2 term=11 petitioners=2 force_stepdown_leader=4
+[leader_elected] node=2 term=13
+[petition_stepdown] node=2 term=13 forced_by=3
+[petition_recv] node=2 term=14 from=1 rtt_reported=68.0ms count=1 needed=2
+[petition_recv] node=2 term=14 from=0 rtt_reported=74.0ms count=2 needed=2
+[petition_accept] node=2 term=14 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=15 from=0 rtt_reported=73.9ms count=1 needed=2
+[petition_recv] node=2 term=16 from=1 rtt_reported=68.2ms count=1 needed=2
+[petition_recv] node=2 term=16 from=0 rtt_reported=73.9ms count=2 needed=2
+[petition_accept] node=2 term=16 petitioners=2 force_stepdown_leader=3
+[leader_elected] node=2 term=17
+[petition_stepdown] node=2 term=17 forced_by=3
+[petition_recv] node=2 term=18 from=0 rtt_reported=74.0ms count=1 needed=2
+[petition_recv] node=2 term=18 from=1 rtt_reported=70.4ms count=2 needed=2
+[petition_accept] node=2 term=18 petitioners=2 force_stepdown_leader=3
+[leader_elected] node=2 term=19
+[petition_stepdown] node=2 term=19 forced_by=3
+[petition_recv] node=2 term=20 from=0 rtt_reported=74.0ms count=1 needed=2
+[petition_recv] node=2 term=20 from=1 rtt_reported=69.2ms count=2 needed=2
+[petition_accept] node=2 term=20 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=22 from=1 rtt_reported=69.0ms count=1 needed=2
+[petition_recv] node=2 term=22 from=0 rtt_reported=74.1ms count=2 needed=2
+[petition_accept] node=2 term=22 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=23 from=1 rtt_reported=68.5ms count=1 needed=2
+[petition_recv] node=2 term=24 from=0 rtt_reported=74.1ms count=1 needed=2
+[petition_recv] node=2 term=24 from=1 rtt_reported=68.4ms count=2 needed=2
+[petition_accept] node=2 term=24 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=25 from=1 rtt_reported=68.2ms count=1 needed=2
+[petition_recv] node=2 term=25 from=0 rtt_reported=74.1ms count=2 needed=2
+[petition_accept] node=2 term=25 petitioners=2 force_stepdown_leader=3
+[leader_elected] node=2 term=26
+[petition_stepdown] node=2 term=26 forced_by=3
+[petition_recv] node=2 term=27 from=1 rtt_reported=68.0ms count=1 needed=2
+[petition_recv] node=2 term=27 from=0 rtt_reported=75.9ms count=2 needed=2
+[petition_accept] node=2 term=27 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=28 from=1 rtt_reported=68.0ms count=1 needed=2
+[petition_recv] node=2 term=28 from=0 rtt_reported=74.8ms count=2 needed=2
+[petition_accept] node=2 term=28 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=29 from=0 rtt_reported=74.7ms count=1 needed=2
+[petition_recv] node=2 term=29 from=1 rtt_reported=68.0ms count=2 needed=2
+[petition_accept] node=2 term=29 petitioners=2 force_stepdown_leader=3
+[leader_elected] node=2 term=30
+[petition_stepdown] node=2 term=30 forced_by=3
+[leader_elected] node=2 term=31
+[petition_stepdown] node=2 term=31 forced_by=3
+[leader_elected] node=2 term=33
+[petition_stepdown] node=2 term=33 forced_by=3
+[petition_recv] node=2 term=35 from=1 rtt_reported=68.4ms count=1 needed=2
+[petition_recv] node=2 term=35 from=0 rtt_reported=74.4ms count=2 needed=2
+[petition_accept] node=2 term=35 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=36 from=1 rtt_reported=68.4ms count=1 needed=2
+[petition_recv] node=2 term=36 from=0 rtt_reported=74.3ms count=2 needed=2
+[petition_accept] node=2 term=36 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=37 from=1 rtt_reported=68.6ms count=1 needed=2
+[petition_recv] node=2 term=38 from=1 rtt_reported=69.0ms count=1 needed=2
+[petition_recv] node=2 term=38 from=0 rtt_reported=74.1ms count=2 needed=2
+[petition_accept] node=2 term=38 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=39 from=1 rtt_reported=68.8ms count=1 needed=2
+[petition_recv] node=2 term=39 from=0 rtt_reported=75.7ms count=2 needed=2
+[petition_accept] node=2 term=39 petitioners=2 force_stepdown_leader=1
+[leader_elected] node=2 term=40
+[petition_stepdown] node=2 term=40 forced_by=3
+[petition_recv] node=2 term=42 from=1 rtt_reported=68.4ms count=1 needed=2
+[petition_recv] node=2 term=42 from=0 rtt_reported=73.9ms count=2 needed=2
+[petition_accept] node=2 term=42 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=43 from=0 rtt_reported=74.0ms count=1 needed=2
+[petition_recv] node=2 term=43 from=1 rtt_reported=68.2ms count=2 needed=2
+[petition_accept] node=2 term=43 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=44 from=0 rtt_reported=74.3ms count=1 needed=2
+[petition_recv] node=2 term=44 from=1 rtt_reported=68.1ms count=2 needed=2
+[petition_accept] node=2 term=44 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=45 from=1 rtt_reported=68.1ms count=1 needed=2
+[petition_recv] node=2 term=45 from=0 rtt_reported=74.3ms count=2 needed=2
+[petition_accept] node=2 term=45 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=46 from=0 rtt_reported=74.1ms count=1 needed=2
+[petition_recv] node=2 term=48 from=1 rtt_reported=68.4ms count=1 needed=2
+[petition_recv] node=2 term=48 from=0 rtt_reported=74.2ms count=2 needed=2
+[petition_accept] node=2 term=48 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=50 from=0 rtt_reported=74.3ms count=1 needed=2
+[petition_recv] node=2 term=50 from=1 rtt_reported=68.3ms count=2 needed=2
+[petition_accept] node=2 term=50 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=51 from=1 rtt_reported=68.4ms count=1 needed=2
+[petition_recv] node=2 term=51 from=0 rtt_reported=74.4ms count=2 needed=2
+[petition_accept] node=2 term=51 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=52 from=1 rtt_reported=68.2ms count=1 needed=2
+[petition_recv] node=2 term=52 from=0 rtt_reported=74.3ms count=2 needed=2
+[petition_accept] node=2 term=52 petitioners=2 force_stepdown_leader=4
+[petition_recv] node=2 term=53 from=0 rtt_reported=74.4ms count=1 needed=2
+[petition_recv] node=2 term=53 from=1 rtt_reported=68.1ms count=2 needed=2
+[petition_accept] node=2 term=53 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=54 from=0 rtt_reported=74.4ms count=1 needed=2
+[petition_recv] node=2 term=54 from=1 rtt_reported=68.2ms count=2 needed=2
+[petition_accept] node=2 term=54 petitioners=2 force_stepdown_leader=3
+[petition_recv] node=2 term=55 from=1 rtt_reported=68.2ms count=1 needed=2
+[petition_recv] node=2 term=56 from=1 rtt_reported=68.2ms count=1 needed=2
+[petition_recv] node=2 term=56 from=0 rtt_reported=74.3ms count=2 needed=2
+[petition_accept] node=2 term=56 petitioners=2 force_stepdown_leader=4
+[petition_recv] node=2 term=57 from=0 rtt_reported=74.2ms count=1 needed=2
+[leader_elected] node=2 term=58
+[petition_stepdown] node=2 term=58 forced_by=3
+[leader_elected] node=2 term=59
+[petition_stepdown] node=2 term=59 forced_by=3
+[petition_recv] node=2 term=60 from=0 rtt_reported=74.2ms count=1 needed=2
+[petition_recv] node=2 term=61 from=1 rtt_reported=68.3ms count=1 needed=2
+election_msgs: node=2 sent=140 recv=125

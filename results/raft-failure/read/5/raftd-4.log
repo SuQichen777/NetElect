@@ -1,0 +1,41 @@
+raftd up: id=4 transport=grpc listen=clnode005.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+fault_latency_active: node=4 outbound_delay=10ms inbound_ping_delay=0ms random=false
+[election_start] node=4 term=5 ts=1780943583746 detect_ms=165.0
+[leader_elected] node=4 term=5 ts=1780943583760
+fault_stepdown: node=4 term=5 stepped=true ts=1780943590768
+[election_start] node=4 term=10 ts=1780943619765 detect_ms=207.9
+[leader_elected] node=4 term=10 ts=1780943619776
+fault_stepdown: node=4 term=10 stepped=true ts=1780943626777
+[election_start] node=4 term=11 ts=1780943626995 detect_ms=218.0
+[leader_elected] node=4 term=11 ts=1780943627006
+fault_stepdown: node=4 term=11 stepped=true ts=1780943634006
+[election_start] node=4 term=13 ts=1780943641316 detect_ms=155.5
+[leader_elected] node=4 term=13 ts=1780943641327
+fault_stepdown: node=4 term=13 stepped=true ts=1780943648327
+[election_start] node=4 term=16 ts=1780943662892 detect_ms=207.0
+[election_start] node=4 term=17 ts=1780943670093 detect_ms=194.4
+[leader_elected] node=4 term=17 ts=1780943670104
+fault_stepdown: node=4 term=17 stepped=true ts=1780943677109
+[election_start] node=4 term=20 ts=1780943691722 detect_ms=190.1
+[leader_elected] node=4 term=20 ts=1780943691733
+fault_stepdown: node=4 term=20 stepped=true ts=1780943698734
+[election_start] node=4 term=24 ts=1780943720487 detect_ms=171.5
+[leader_elected] node=4 term=24 ts=1780943720498
+fault_stepdown: node=4 term=24 stepped=true ts=1780943727498
+[election_start] node=4 term=25 ts=1780943727681 detect_ms=183.3
+[leader_elected] node=4 term=25 ts=1780943727692
+fault_stepdown: node=4 term=25 stepped=true ts=1780943734693
+[election_start] node=4 term=27 ts=1780943742014 detect_ms=211.4
+[leader_elected] node=4 term=27 ts=1780943742025
+fault_stepdown: node=4 term=27 stepped=true ts=1780943749026
+[election_start] node=4 term=34 ts=1780943792332 detect_ms=164.4
+[leader_elected] node=4 term=34 ts=1780943792343
+fault_stepdown: node=4 term=34 stepped=true ts=1780943799343
+[election_start] node=4 term=35 ts=1780943799596 detect_ms=253.1
+[leader_elected] node=4 term=35 ts=1780943799607
+fault_stepdown: node=4 term=35 stepped=true ts=1780943806607
+[election_start] node=4 term=39 ts=1780943828426 detect_ms=170.7
+[leader_elected] node=4 term=39 ts=1780943828438
+fault_stepdown: node=4 term=39 stepped=true ts=1780943835438
+[election_start] node=4 term=40 ts=1780943835661 detect_ms=223.7
+[leader_elected] node=4 term=40 ts=1780943835672

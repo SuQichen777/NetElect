@@ -1,0 +1,17 @@
+raftd up: id=0 transport=grpc listen=clnode005.clemson.cloudlab.us:7000 peers=clnode005.clemson.cloudlab.us:7000,clnode002.clemson.cloudlab.us:7000,clnode008.clemson.cloudlab.us:7000,clnode004.clemson.cloudlab.us:7000,clnode016.clemson.cloudlab.us:7000
+[election_start] node=0 term=1 ts=1782191591045 detect_ms=216.2
+fault_latency_active: node=0 outbound_delay=35ms inbound_ping_delay=0ms random=true
+[petition_send] node=0 term=2 leader=2 proposed=4 rtt_to_leader=37.6ms
+[petition_send] node=0 term=2 leader=2 proposed=4 rtt_to_leader=37.4ms
+[petition_send] node=0 term=2 leader=2 proposed=4 rtt_to_leader=37.2ms
+[election_start] node=0 term=3 ts=1782191602876 detect_ms=182.4
+[leader_elected] node=0 term=3 ts=1782191602912
+[petition_stepdown] node=0 term=3 forced_by=4
+[petition_send] node=0 term=4 leader=1 proposed=4 rtt_to_leader=36.1ms
+[petition_send] node=0 term=4 leader=1 proposed=4 rtt_to_leader=36.1ms
+[petition_send] node=0 term=4 leader=1 proposed=4 rtt_to_leader=36.0ms
+[petition_send] node=0 term=5 leader=2 proposed=4 rtt_to_leader=38.5ms
+[petition_send] node=0 term=5 leader=2 proposed=4 rtt_to_leader=38.0ms
+[petition_send] node=0 term=6 leader=1 proposed=4 rtt_to_leader=36.3ms
+[petition_send] node=0 term=6 leader=1 proposed=4 rtt_to_leader=36.3ms
+election_msgs: node=0 sent=8 recv=11

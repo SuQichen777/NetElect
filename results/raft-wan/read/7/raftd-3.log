@@ -1,0 +1,304 @@
+raftd up: id=3 transport=grpc listen=clstore04.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+[status]      node=3 term=0 role=follower
+fault_latency_active: node=3 outbound_delay=35ms inbound_ping_delay=0ms random=true
+[petition_send] node=3 term=4 leader=1 proposed=4 rtt_to_leader=86.5ms
+[petition_send] node=3 term=4 leader=1 proposed=4 rtt_to_leader=92.7ms
+[petition_send] node=3 term=5 leader=0 proposed=4 rtt_to_leader=82.4ms
+[petition_send] node=3 term=5 leader=0 proposed=4 rtt_to_leader=86.8ms
+[petition_send] node=3 term=7 leader=1 proposed=4 rtt_to_leader=109.0ms
+[petition_send] node=3 term=7 leader=1 proposed=4 rtt_to_leader=109.0ms
+[petition_send] node=3 term=7 leader=1 proposed=4 rtt_to_leader=110.6ms
+[petition_send] node=3 term=7 leader=1 proposed=4 rtt_to_leader=110.6ms
+[petition_send] node=3 term=8 leader=1 proposed=4 rtt_to_leader=111.8ms
+[petition_send] node=3 term=9 leader=1 proposed=4 rtt_to_leader=111.8ms
+[petition_send] node=3 term=10 leader=1 proposed=4 rtt_to_leader=112.8ms
+[petition_recv] node=3 term=13 from=0 rtt_reported=69.6ms count=1 needed=2
+[petition_recv] node=3 term=13 from=1 rtt_reported=70.0ms count=2 needed=2
+[petition_recv] node=3 term=14 from=0 rtt_reported=69.9ms count=1 needed=2
+[petition_recv] node=3 term=15 from=1 rtt_reported=70.5ms count=1 needed=2
+[status]      node=3 term=16 role=follower
+[petition_recv] node=3 term=16 from=0 rtt_reported=70.4ms count=1 needed=2
+[petition_recv] node=3 term=17 from=1 rtt_reported=70.6ms count=1 needed=2
+[petition_recv] node=3 term=18 from=1 rtt_reported=70.8ms count=1 needed=2
+[petition_send] node=3 term=18 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=18 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_recv] node=3 term=22 from=0 rtt_reported=71.0ms count=1 needed=2
+[petition_recv] node=3 term=22 from=1 rtt_reported=70.9ms count=2 needed=2
+[petition_recv] node=3 term=23 from=1 rtt_reported=71.1ms count=1 needed=2
+[petition_recv] node=3 term=24 from=1 rtt_reported=71.5ms count=1 needed=2
+[petition_recv] node=3 term=25 from=0 rtt_reported=71.1ms count=1 needed=2
+[petition_recv] node=3 term=25 from=1 rtt_reported=71.7ms count=2 needed=2
+[petition_recv] node=3 term=34 from=0 rtt_reported=71.3ms count=1 needed=2
+[petition_recv] node=3 term=36 from=0 rtt_reported=71.2ms count=1 needed=2
+[petition_recv] node=3 term=36 from=1 rtt_reported=71.3ms count=2 needed=2
+[petition_send] node=3 term=37 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=37 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=37 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=38 leader=1 proposed=4 rtt_to_leader=116.7ms
+[petition_send] node=3 term=38 leader=1 proposed=4 rtt_to_leader=116.7ms
+[petition_send] node=3 term=39 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=39 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_recv] node=3 term=40 from=0 rtt_reported=71.2ms count=1 needed=2
+[petition_recv] node=3 term=41 from=1 rtt_reported=71.1ms count=1 needed=2
+[petition_recv] node=3 term=43 from=1 rtt_reported=71.1ms count=1 needed=2
+[petition_recv] node=3 term=43 from=0 rtt_reported=71.4ms count=2 needed=2
+[petition_recv] node=3 term=44 from=0 rtt_reported=71.3ms count=1 needed=2
+[petition_recv] node=3 term=45 from=0 rtt_reported=71.6ms count=1 needed=2
+[petition_recv] node=3 term=45 from=1 rtt_reported=71.3ms count=2 needed=2
+[petition_recv] node=3 term=46 from=1 rtt_reported=73.6ms count=1 needed=2
+[petition_recv] node=3 term=46 from=0 rtt_reported=71.3ms count=2 needed=2
+[petition_recv] node=3 term=49 from=0 rtt_reported=71.4ms count=1 needed=2
+[election]    node=3 term=16→52
+[role_change] node=3 term=52 role=leader
+[status]      node=3 term=52 role=leader
+[petition_recv] node=3 term=67 from=1 rtt_reported=71.3ms count=1 needed=2
+[petition_recv] node=3 term=69 from=0 rtt_reported=72.1ms count=1 needed=2
+[petition_recv] node=3 term=69 from=1 rtt_reported=71.3ms count=2 needed=2
+[petition_recv] node=3 term=70 from=0 rtt_reported=71.5ms count=1 needed=2
+[petition_recv] node=3 term=74 from=0 rtt_reported=72.3ms count=1 needed=2
+[petition_recv] node=3 term=74 from=1 rtt_reported=71.4ms count=2 needed=2
+[petition_recv] node=3 term=76 from=0 rtt_reported=72.2ms count=1 needed=2
+[petition_recv] node=3 term=76 from=1 rtt_reported=71.4ms count=2 needed=2
+[petition_recv] node=3 term=77 from=1 rtt_reported=71.4ms count=1 needed=2
+[petition_recv] node=3 term=78 from=1 rtt_reported=71.3ms count=1 needed=2
+[petition_recv] node=3 term=79 from=1 rtt_reported=71.6ms count=1 needed=2
+[petition_recv] node=3 term=79 from=0 rtt_reported=72.1ms count=2 needed=2
+[election]    node=3 term=52→79
+[role_change] node=3 term=79 role=follower
+[status]      node=3 term=79 role=follower
+[petition_recv] node=3 term=81 from=0 rtt_reported=71.9ms count=1 needed=2
+[petition_recv] node=3 term=81 from=1 rtt_reported=71.4ms count=2 needed=2
+[petition_recv] node=3 term=83 from=1 rtt_reported=71.4ms count=1 needed=2
+[petition_recv] node=3 term=83 from=0 rtt_reported=74.0ms count=2 needed=2
+[petition_recv] node=3 term=84 from=1 rtt_reported=71.8ms count=1 needed=2
+[petition_recv] node=3 term=84 from=0 rtt_reported=73.5ms count=2 needed=2
+[petition_recv] node=3 term=85 from=1 rtt_reported=71.8ms count=1 needed=2
+[petition_recv] node=3 term=85 from=0 rtt_reported=73.1ms count=2 needed=2
+[petition_recv] node=3 term=91 from=1 rtt_reported=71.5ms count=1 needed=2
+[petition_recv] node=3 term=91 from=0 rtt_reported=71.5ms count=2 needed=2
+[petition_recv] node=3 term=92 from=0 rtt_reported=71.8ms count=1 needed=2
+[petition_recv] node=3 term=93 from=1 rtt_reported=71.1ms count=1 needed=2
+[petition_recv] node=3 term=94 from=1 rtt_reported=71.3ms count=1 needed=2
+[petition_recv] node=3 term=94 from=0 rtt_reported=71.5ms count=2 needed=2
+[petition_recv] node=3 term=95 from=0 rtt_reported=71.3ms count=1 needed=2
+[petition_recv] node=3 term=96 from=0 rtt_reported=71.4ms count=1 needed=2
+[petition_recv] node=3 term=97 from=1 rtt_reported=71.2ms count=1 needed=2
+[petition_recv] node=3 term=98 from=0 rtt_reported=71.6ms count=1 needed=2
+[petition_recv] node=3 term=99 from=1 rtt_reported=71.1ms count=1 needed=2
+[petition_recv] node=3 term=99 from=0 rtt_reported=72.0ms count=2 needed=2
+[petition_recv] node=3 term=100 from=1 rtt_reported=71.1ms count=1 needed=2
+[petition_recv] node=3 term=100 from=0 rtt_reported=72.1ms count=2 needed=2
+[petition_recv] node=3 term=101 from=1 rtt_reported=71.2ms count=1 needed=2
+[petition_recv] node=3 term=104 from=0 rtt_reported=71.9ms count=1 needed=2
+[petition_recv] node=3 term=104 from=1 rtt_reported=71.2ms count=2 needed=2
+[petition_recv] node=3 term=105 from=1 rtt_reported=71.1ms count=1 needed=2
+[petition_send] node=3 term=108 leader=1 proposed=4 rtt_to_leader=120.5ms
+[petition_send] node=3 term=108 leader=1 proposed=4 rtt_to_leader=119.9ms
+[petition_send] node=3 term=108 leader=1 proposed=4 rtt_to_leader=119.4ms
+[petition_recv] node=3 term=109 from=0 rtt_reported=71.5ms count=1 needed=2
+[petition_recv] node=3 term=109 from=1 rtt_reported=71.3ms count=2 needed=2
+[election]    node=3 term=79→109
+[status]      node=3 term=109 role=follower
+[petition_recv] node=3 term=111 from=1 rtt_reported=71.3ms count=1 needed=2
+[petition_recv] node=3 term=114 from=1 rtt_reported=71.3ms count=1 needed=2
+[petition_recv] node=3 term=114 from=0 rtt_reported=71.3ms count=2 needed=2
+[petition_send] node=3 term=116 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=116 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=116 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=116 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=116 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=116 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_recv] node=3 term=117 from=0 rtt_reported=71.4ms count=1 needed=2
+[petition_recv] node=3 term=117 from=1 rtt_reported=71.2ms count=2 needed=2
+[petition_recv] node=3 term=118 from=1 rtt_reported=71.2ms count=1 needed=2
+[petition_recv] node=3 term=118 from=0 rtt_reported=71.3ms count=2 needed=2
+[petition_recv] node=3 term=119 from=1 rtt_reported=71.2ms count=1 needed=2
+[petition_recv] node=3 term=119 from=0 rtt_reported=71.3ms count=2 needed=2
+[petition_recv] node=3 term=120 from=1 rtt_reported=71.3ms count=1 needed=2
+[petition_send] node=3 term=121 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=121 leader=1 proposed=4 rtt_to_leader=117.1ms
+[petition_send] node=3 term=121 leader=1 proposed=4 rtt_to_leader=117.0ms
+[petition_send] node=3 term=122 leader=1 proposed=4 rtt_to_leader=117.0ms
+[petition_send] node=3 term=122 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=122 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=123 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_recv] node=3 term=123 from=1 rtt_reported=71.3ms count=1 needed=2
+[petition_recv] node=3 term=123 from=0 rtt_reported=71.3ms count=2 needed=2
+[petition_send] node=3 term=124 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=124 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=124 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=125 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=125 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=126 leader=0 proposed=4 rtt_to_leader=104.0ms
+[petition_send] node=3 term=126 leader=0 proposed=4 rtt_to_leader=104.0ms
+[petition_send] node=3 term=127 leader=0 proposed=4 rtt_to_leader=104.0ms
+[petition_send] node=3 term=129 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=129 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=129 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=130 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=130 leader=0 proposed=4 rtt_to_leader=104.0ms
+[election]    node=3 term=109→137
+[status]      node=3 term=137 role=follower
+[petition_recv] node=3 term=140 from=0 rtt_reported=71.3ms count=1 needed=2
+[petition_recv] node=3 term=140 from=1 rtt_reported=71.3ms count=2 needed=2
+[petition_send] node=3 term=141 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=141 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=141 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=142 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_recv] node=3 term=142 from=1 rtt_reported=71.1ms count=1 needed=2
+[petition_recv] node=3 term=142 from=0 rtt_reported=71.3ms count=2 needed=2
+[petition_send] node=3 term=143 leader=0 proposed=4 rtt_to_leader=104.0ms
+[petition_send] node=3 term=143 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=143 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=143 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=143 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=144 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=145 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=145 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=146 leader=0 proposed=4 rtt_to_leader=103.6ms
+[petition_send] node=3 term=146 leader=0 proposed=4 rtt_to_leader=103.7ms
+[petition_send] node=3 term=146 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=148 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=148 leader=0 proposed=4 rtt_to_leader=104.2ms
+[petition_send] node=3 term=148 leader=0 proposed=4 rtt_to_leader=104.2ms
+[petition_send] node=3 term=148 leader=0 proposed=4 rtt_to_leader=104.4ms
+[petition_send] node=3 term=148 leader=0 proposed=4 rtt_to_leader=104.3ms
+[petition_recv] node=3 term=149 from=1 rtt_reported=71.2ms count=1 needed=2
+[petition_recv] node=3 term=149 from=0 rtt_reported=71.3ms count=2 needed=2
+[petition_recv] node=3 term=150 from=1 rtt_reported=71.3ms count=1 needed=2
+[petition_send] node=3 term=152 leader=1 proposed=4 rtt_to_leader=117.1ms
+[petition_send] node=3 term=152 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=153 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=153 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=154 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=154 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=155 leader=1 proposed=4 rtt_to_leader=116.6ms
+[petition_send] node=3 term=155 leader=1 proposed=4 rtt_to_leader=116.6ms
+[petition_send] node=3 term=156 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=156 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_recv] node=3 term=157 from=1 rtt_reported=71.2ms count=1 needed=2
+[petition_recv] node=3 term=157 from=0 rtt_reported=70.9ms count=2 needed=2
+[petition_recv] node=3 term=158 from=0 rtt_reported=71.1ms count=1 needed=2
+[election]    node=3 term=137→159
+[status]      node=3 term=159 role=follower
+[petition_send] node=3 term=159 leader=0 proposed=4 rtt_to_leader=104.0ms
+[petition_recv] node=3 term=161 from=0 rtt_reported=71.2ms count=1 needed=2
+[petition_send] node=3 term=162 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=162 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=162 leader=1 proposed=4 rtt_to_leader=117.7ms
+[petition_send] node=3 term=163 leader=1 proposed=4 rtt_to_leader=117.7ms
+[petition_send] node=3 term=163 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=163 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=163 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=163 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_recv] node=3 term=164 from=0 rtt_reported=71.1ms count=1 needed=2
+[petition_recv] node=3 term=164 from=1 rtt_reported=71.1ms count=2 needed=2
+[petition_send] node=3 term=165 leader=1 proposed=4 rtt_to_leader=117.0ms
+[petition_send] node=3 term=165 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=166 leader=0 proposed=4 rtt_to_leader=103.7ms
+[petition_send] node=3 term=166 leader=0 proposed=4 rtt_to_leader=103.7ms
+[petition_send] node=3 term=166 leader=0 proposed=4 rtt_to_leader=103.7ms
+[petition_send] node=3 term=167 leader=0 proposed=4 rtt_to_leader=103.7ms
+[petition_send] node=3 term=168 leader=0 proposed=4 rtt_to_leader=103.6ms
+[petition_send] node=3 term=168 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=171 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=171 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=171 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=172 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=172 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=173 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=174 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=174 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=175 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=175 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=176 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=177 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=177 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=180 leader=0 proposed=4 rtt_to_leader=103.7ms
+[petition_send] node=3 term=180 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=180 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=181 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=181 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=183 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=183 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=183 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_recv] node=3 term=184 from=1 rtt_reported=71.2ms count=1 needed=2
+[petition_recv] node=3 term=184 from=0 rtt_reported=71.4ms count=2 needed=2
+[petition_recv] node=3 term=185 from=0 rtt_reported=71.4ms count=1 needed=2
+[petition_recv] node=3 term=185 from=1 rtt_reported=71.2ms count=2 needed=2
+[petition_recv] node=3 term=186 from=0 rtt_reported=71.4ms count=1 needed=2
+[petition_recv] node=3 term=186 from=1 rtt_reported=71.4ms count=2 needed=2
+[petition_recv] node=3 term=187 from=1 rtt_reported=71.4ms count=1 needed=2
+[petition_recv] node=3 term=187 from=0 rtt_reported=71.3ms count=2 needed=2
+[petition_recv] node=3 term=188 from=1 rtt_reported=71.6ms count=1 needed=2
+[petition_recv] node=3 term=188 from=0 rtt_reported=71.4ms count=2 needed=2
+[petition_recv] node=3 term=189 from=0 rtt_reported=71.4ms count=1 needed=2
+[petition_send] node=3 term=190 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=190 leader=1 proposed=4 rtt_to_leader=116.7ms
+[election]    node=3 term=159→191
+[status]      node=3 term=191 role=follower
+[petition_recv] node=3 term=191 from=0 rtt_reported=71.2ms count=1 needed=2
+[petition_recv] node=3 term=191 from=1 rtt_reported=71.6ms count=2 needed=2
+[petition_recv] node=3 term=192 from=0 rtt_reported=71.2ms count=1 needed=2
+[petition_recv] node=3 term=192 from=1 rtt_reported=71.2ms count=2 needed=2
+[petition_send] node=3 term=194 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=194 leader=0 proposed=4 rtt_to_leader=104.2ms
+[petition_send] node=3 term=194 leader=0 proposed=4 rtt_to_leader=104.0ms
+[petition_send] node=3 term=195 leader=0 proposed=4 rtt_to_leader=104.0ms
+[petition_recv] node=3 term=200 from=0 rtt_reported=71.4ms count=1 needed=2
+[petition_recv] node=3 term=200 from=1 rtt_reported=71.2ms count=2 needed=2
+[petition_send] node=3 term=201 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=201 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=201 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=202 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=202 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=203 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=204 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=204 leader=0 proposed=4 rtt_to_leader=104.0ms
+[petition_send] node=3 term=206 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=206 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=206 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=206 leader=1 proposed=4 rtt_to_leader=116.7ms
+[petition_send] node=3 term=206 leader=1 proposed=4 rtt_to_leader=116.6ms
+[petition_send] node=3 term=207 leader=1 proposed=4 rtt_to_leader=116.6ms
+[petition_send] node=3 term=208 leader=1 proposed=4 rtt_to_leader=116.6ms
+[petition_send] node=3 term=208 leader=1 proposed=4 rtt_to_leader=116.7ms
+[petition_send] node=3 term=209 leader=1 proposed=4 rtt_to_leader=116.7ms
+[petition_send] node=3 term=209 leader=1 proposed=4 rtt_to_leader=116.7ms
+[petition_send] node=3 term=210 leader=1 proposed=4 rtt_to_leader=116.7ms
+[petition_send] node=3 term=211 leader=1 proposed=4 rtt_to_leader=116.7ms
+[petition_send] node=3 term=211 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=212 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=212 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_recv] node=3 term=215 from=0 rtt_reported=71.3ms count=1 needed=2
+[petition_recv] node=3 term=215 from=1 rtt_reported=71.4ms count=2 needed=2
+[petition_send] node=3 term=216 leader=1 proposed=4 rtt_to_leader=116.7ms
+[petition_send] node=3 term=216 leader=1 proposed=4 rtt_to_leader=116.8ms
+[election]    node=3 term=191→216
+[status]      node=3 term=216 role=follower
+[petition_send] node=3 term=216 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_send] node=3 term=216 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=216 leader=1 proposed=4 rtt_to_leader=116.9ms
+[petition_send] node=3 term=217 leader=1 proposed=4 rtt_to_leader=117.0ms
+[petition_send] node=3 term=217 leader=1 proposed=4 rtt_to_leader=117.0ms
+[petition_send] node=3 term=217 leader=1 proposed=4 rtt_to_leader=116.8ms
+[petition_recv] node=3 term=218 from=1 rtt_reported=71.3ms count=1 needed=2
+[petition_recv] node=3 term=218 from=0 rtt_reported=71.2ms count=2 needed=2
+[petition_recv] node=3 term=219 from=1 rtt_reported=71.2ms count=1 needed=2
+[petition_recv] node=3 term=219 from=0 rtt_reported=71.2ms count=2 needed=2
+[petition_send] node=3 term=220 leader=1 proposed=4 rtt_to_leader=117.2ms
+[petition_send] node=3 term=220 leader=1 proposed=4 rtt_to_leader=117.1ms
+[petition_send] node=3 term=221 leader=1 proposed=4 rtt_to_leader=117.1ms
+[petition_send] node=3 term=225 leader=0 proposed=4 rtt_to_leader=103.8ms
+[petition_send] node=3 term=225 leader=0 proposed=4 rtt_to_leader=103.9ms
+[petition_send] node=3 term=228 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=228 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=228 leader=0 proposed=4 rtt_to_leader=104.2ms
+[petition_send] node=3 term=228 leader=0 proposed=4 rtt_to_leader=104.2ms
+[petition_send] node=3 term=228 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=229 leader=0 proposed=4 rtt_to_leader=104.1ms
+[petition_send] node=3 term=229 leader=0 proposed=4 rtt_to_leader=104.2ms
+[petition_send] node=3 term=229 leader=0 proposed=4 rtt_to_leader=104.2ms
+[petition_send] node=3 term=230 leader=0 proposed=4 rtt_to_leader=104.0ms
+[petition_send] node=3 term=231 leader=0 proposed=4 rtt_to_leader=103.9ms
+election_msgs: node=3 sent=372 recv=420

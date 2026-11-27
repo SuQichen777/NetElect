@@ -1,0 +1,3 @@
+label,total,success,failed,qps,p50_ms,p95_ms,p99_ms,p999_ms,timeout,not_leader,dropped,no_quorum,unknown
+read,37565,37565,0,1252.17,93.477,110.513,119.543,130.243,0,0,0,0,0
+write,9400,9400,0,313.33,53.353,74.471,96.566,102.858,0,0,0,0,0

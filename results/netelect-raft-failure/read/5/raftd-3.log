@@ -1,0 +1,28 @@
+raftd up: id=3 transport=grpc listen=clstore04.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+fault_latency_active: node=3 outbound_delay=5ms inbound_ping_delay=0ms random=false
+[election_start] node=3 term=3 ts=1780945724943 detect_ms=226.4
+[leader_elected] node=3 term=3 ts=1780945724957
+fault_stepdown: node=3 term=3 stepped=true ts=1780945731965
+[election_start] node=3 term=7 ts=1780945753744 detect_ms=160.5
+[leader_elected] node=3 term=7 ts=1780945753750
+fault_stepdown: node=3 term=7 stepped=true ts=1780945760751
+[election_start] node=3 term=10 ts=1780945775347 detect_ms=184.9
+[leader_elected] node=3 term=10 ts=1780945775352
+fault_stepdown: node=3 term=10 stepped=true ts=1780945782356
+[election_start] node=3 term=18 ts=1780945832924 detect_ms=164.1
+[leader_elected] node=3 term=18 ts=1780945832930
+fault_stepdown: node=3 term=18 stepped=true ts=1780945839930
+[election_start] node=3 term=20 ts=1780945847290 detect_ms=174.7
+[leader_elected] node=3 term=20 ts=1780945847296
+fault_stepdown: node=3 term=20 stepped=true ts=1780945854297
+[election_start] node=3 term=25 ts=1780945883239 detect_ms=163.3
+[leader_elected] node=3 term=25 ts=1780945883246
+fault_stepdown: node=3 term=25 stepped=true ts=1780945890246
+[election_start] node=3 term=27 ts=1780945897662 detect_ms=197.2
+[leader_elected] node=3 term=27 ts=1780945897667
+fault_stepdown: node=3 term=27 stepped=true ts=1780945904668
+[election_start] node=3 term=33 ts=1780945940987 detect_ms=228.1
+[leader_elected] node=3 term=33 ts=1780945940993
+fault_stepdown: node=3 term=33 stepped=true ts=1780945947998
+[election_start] node=3 term=40 ts=1780945991410 detect_ms=254.7
+[leader_elected] node=3 term=40 ts=1780945991416

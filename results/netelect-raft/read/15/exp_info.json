@@ -1,0 +1,10 @@
+{
+    "nb_clients": 5,
+    "nb_servers": 5,
+    "label": "netelect-raft",
+    "mode": "read",
+    "read_ratio": 0.8,
+    "fault_type": "baseline",
+    "netelect_enabled": true,
+    "fd_mode": "raft"
+}

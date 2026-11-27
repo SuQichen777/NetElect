@@ -1,0 +1,21 @@
+{
+  "user": "Jiaxi",
+  "ips": [
+    "clnode005.clemson.cloudlab.us",
+    "clnode002.clemson.cloudlab.us",
+    "clnode008.clemson.cloudlab.us",
+    "clnode004.clemson.cloudlab.us",
+    "clnode016.clemson.cloudlab.us"
+  ],
+  "config": "config/cluster.netelect.jacobson.json",
+  "mode": "mixed",
+  "experiment": "mixed",
+  "csv": "results.csv",
+  "nb_servers": 5,
+  "read_ratio": 0.8,
+  "failure_injection": false,
+  "netelect_enabled": true,
+  "fd_mode": "Jacobson",
+  "repeat": 1,
+  "settle_delay_s": 3
+}

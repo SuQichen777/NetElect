@@ -1,0 +1,35 @@
+raftd up: id=3 transport=grpc listen=clstore04.clemson.cloudlab.us:7000 peers=clstore03.clemson.cloudlab.us:7000,clnode007.clemson.cloudlab.us:7000,clnode013.clemson.cloudlab.us:7000,clstore04.clemson.cloudlab.us:7000,clnode005.clemson.cloudlab.us:7000
+[status]      node=3 term=0 role=follower
+fault_latency_active: node=3 outbound_delay=38ms inbound_ping_delay=0ms random=true
+[status]      node=3 term=26 role=follower
+[election]    node=3 term=26→83
+[status]      node=3 term=83 role=follower
+[election]    node=3 term=83→126
+[status]      node=3 term=126 role=follower
+[election]    node=3 term=126→186
+[status]      node=3 term=186 role=follower
+[petition_send] node=3 term=228 leader=0 proposed=2 rtt_to_leader=114.1ms
+[election]    node=3 term=186→241
+[role_change] node=3 term=241 role=leader
+[status]      node=3 term=241 role=leader
+[petition_send] node=3 term=243 leader=1 proposed=2 rtt_to_leader=101.9ms
+[petition_send] node=3 term=248 leader=1 proposed=2 rtt_to_leader=101.8ms
+[petition_send] node=3 term=249 leader=1 proposed=2 rtt_to_leader=101.7ms
+[petition_send] node=3 term=257 leader=0 proposed=2 rtt_to_leader=114.0ms
+[petition_send] node=3 term=257 leader=0 proposed=2 rtt_to_leader=114.1ms
+[petition_send] node=3 term=258 leader=1 proposed=2 rtt_to_leader=101.8ms
+[petition_send] node=3 term=273 leader=0 proposed=2 rtt_to_leader=113.7ms
+[election]    node=3 term=241→278
+[role_change] node=3 term=278 role=follower
+[status]      node=3 term=278 role=follower
+[petition_send] node=3 term=284 leader=1 proposed=2 rtt_to_leader=102.0ms
+[petition_send] node=3 term=284 leader=1 proposed=2 rtt_to_leader=102.0ms
+[election]    node=3 term=278→323
+[status]      node=3 term=323 role=follower
+[petition_send] node=3 term=330 leader=1 proposed=2 rtt_to_leader=101.5ms
+[petition_send] node=3 term=332 leader=0 proposed=2 rtt_to_leader=113.7ms
+[election]    node=3 term=323→367
+[status]      node=3 term=367 role=follower
+[petition_send] node=3 term=380 leader=1 proposed=2 rtt_to_leader=102.1ms
+[petition_send] node=3 term=386 leader=1 proposed=2 rtt_to_leader=102.3ms
+election_msgs: node=3 sent=992 recv=936

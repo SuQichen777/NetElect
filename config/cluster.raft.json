@@ -1,0 +1,19 @@
+{
+  "transport": "grpc",
+  "rpc_timeout": "250ms",
+  "nodes": [
+    { "id": 0, "listen": "clnode005.clemson.cloudlab.us:7000" },
+    { "id": 1, "listen": "clnode002.clemson.cloudlab.us:7000" },
+    { "id": 2, "listen": "clnode008.clemson.cloudlab.us:7000" },
+    { "id": 3, "listen": "clnode004.clemson.cloudlab.us:7000" },
+    { "id": 4, "listen": "clnode016.clemson.cloudlab.us:7000" }
+  ],
+  "benchmark": {
+    "workers": 128,
+    "duration": "30s",
+    "timeout": "250ms",
+    "sample_cap": 200000,
+    "mode": "read",
+    "csv_output": "results.csv"
+  }
+}

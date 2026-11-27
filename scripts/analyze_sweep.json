@@ -1,0 +1,35 @@
+{
+    "results_dir": "results",
+    "comparison": true,
+    "_comment": "Each dataset = a named bucket of groups + which run numbers to analyze. 'runs' accepts a range string '13-32', a list '1,3,5-8', or [13,32]-style. Groups must be existing dir names under results_dir. Datasets with no data on disk are skipped gracefully. Run: python3 scripts/analyze_sweep.py --config scripts/analyze_sweep.json",
+    "datasets": [
+        {
+            "name": "benchmark",
+            "title": "Baseline (fault-free)",
+            "fault_type": "baseline",
+            "groups": ["raft", "netelect-raft", "netelect-jacobson"],
+            "runs": "1-20"
+        },
+        {
+            "name": "wan",
+            "title": "WAN latency",
+            "fault_type": "wan",
+            "groups": ["raft-wan", "netelect-raft-wan", "netelect-jacobson-wan"],
+            "runs": "53-72"
+        },
+        {
+            "name": "wan-pde",
+            "title": "WAN latency (petition_direct_election=true)",
+            "fault_type": "wan",
+            "groups": ["raft-wan-pde", "netelect-raft-wan-pde", "netelect-jacobson-wan-pde"],
+            "runs": "1-20"
+        },
+        {
+            "name": "failure",
+            "title": "Leader-crash recovery (petition disabled, rank-biased timeout)",
+            "fault_type": "failure",
+            "groups": ["raft-failure", "netelect-raft-failure", "netelect-jacobson-failure"],
+            "runs": "1-20"
+        }
+    ]
+}
