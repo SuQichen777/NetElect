@@ -6,6 +6,11 @@ This document is derived from the current code in this repository and serves as 
 - Describe the scope of what the current implementation supports
 - Provide clear entry points for future extensions (snapshots, membership changes, persistence, etc.)
 
+> **Status.** Two points below describe intended rather than actual behaviour, and some operational details in §9–§10 are out of date. See [KNOWN_ISSUES.md](KNOWN_ISSUES.md):
+> - Petition acceptance (§4.6): a follower can petition itself, and that petition counts toward the quorum ([C1](KNOWN_ISSUES.md#c1-self-petitions-count-toward-the-petition-quorum)).
+> - Linearizable / ReadIndex reads: no read index is recorded or awaited, so reads right after a leader change can be stale ([C2](KNOWN_ISSUES.md#c2-reads-are-not-linearizable-after-a-leader-change)).
+> - §9–§10: log collection, `exp_info.json` contents, run numbering, `run_sweep.sh`, hostnames and several smaller details ([D3](KNOWN_ISSUES.md#d3-designmd)).
+
 ## 1. Scope and Design Goals
 
 ### 1.1 Goals

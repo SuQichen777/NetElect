@@ -16,6 +16,9 @@ NetElect ports the penalty-score / petition protocol and the failure-detection m
 - [API reference](#api-reference)
 - [Differences from frugal-leader-election](#differences-from-frugal-leader-election)
 - [Limitations](#limitations)
+- [Known issues and planned work](KNOWN_ISSUES.md)
+
+> **Status.** Several correctness issues and documentation gaps are known and scheduled to be fixed before the experiments are re-run. See [KNOWN_ISSUES.md](KNOWN_ISSUES.md).
 
 ## Overview
 
@@ -24,7 +27,7 @@ NetElect ports the penalty-score / petition protocol and the failure-detection m
 - Leader election via `RequestVote` with the log up-to-date check
 - Log replication via `AppendEntries` with ConflictTerm/ConflictIndex fast backup and commitIndex advancement
 - KV state machine (`KVPut` / `KVDelete`) applied by a dedicated `applyLoop` goroutine
-- **Linearizable reads** (`ClientRead`): ReadIndex-style; one quorum-confirmation round is shared by a batch of pending reads
+- **Leadership-confirmed reads** (`ClientRead`): one quorum-confirmation round is shared by a batch of pending reads. These are intended as ReadIndex-style linearizable reads, but the read index is not yet implemented, so reads right after a leader change can be stale ([KNOWN_ISSUES.md C2](KNOWN_ISSUES.md#c2-reads-are-not-linearizable-after-a-leader-change))
 - **Linearizable writes** (`ClientWrite`): committed through the log and applied before the call returns
 - Three interchangeable transports behind the `server.Transport` interface: in-process mock (with fault injection), gRPC (gob encoding, no protobuf), and a custom TCP protocol with request multiplexing
 
@@ -35,7 +38,7 @@ Enabled with `server.WithNetElect(NetElectConfig{...})`, or the `netelect` block
 1. **RTT monitoring.** Every node pings all peers at `monitor_freq_hz` and keeps a per-peer EWMA plus a raw RTT sample window.
 2. **Penalty score.** Each node computes `penalty = mean over peers of (L + w·max(0, L − T))` and broadcasts it via `Raft.PenaltyScore`.
 3. **Petition.** A follower petitions when both (a) the current leader's broadcast penalty exceeds `latency_threshold_ms`, and (b) the lowest-penalty peer is below `leaderPenalty − petition_penalty_margin_ms`. It sends `Raft.Petition` to that peer.
-4. **Acceptance.** The proposed leader accepts once a majority of followers have petitioned it *and* its own RTT to each petitioner is no worse than what that petitioner reports to the current leader.
+4. **Acceptance.** The proposed leader accepts once it has `majority − 1` petitioners *and* its own RTT to each petitioner is no worse than what that petitioner reports to the current leader. The intent is a majority of followers; in the current code a follower can petition itself and that petition is counted ([KNOWN_ISSUES.md C1](KNOWN_ISSUES.md#c1-self-petitions-count-toward-the-petition-quorum)).
 5. **Stepdown.** The proposed leader sends `Raft.RequestVote{IsPetition: true}` to the current leader, which steps down without voting. With `petition_direct_election = false` (default) the next leader is decided by the normal election-timeout race; with `true` the proposed leader immediately starts its own election and almost always wins.
 
 **Failure-detection modes** (`fd_mode`) decide how each election timeout is drawn:
@@ -63,6 +66,7 @@ scripts/       Experiment sweeps (bash + JSON settings) and the analysis script
 results/       Raw experiment data, plots and the generated analysis report
 DESIGN.md      Design document
 EXPERIMENT.md  Experiment write-ups (goals, setup, mechanism, results, conclusions)
+KNOWN_ISSUES.md  Known bugs, stale documentation, and the plan for fixes and re-runs
 ```
 
 ## Build and test
@@ -167,7 +171,7 @@ Since RTT is measured by active Ping, `RTT(a→b) = a.outbound_delay + b.inbound
 
 ## Experiments
 
-All experiments ran on 5 CloudLab nodes (Clemson cluster) over gRPC, with one benchmark client per node (128 workers each). Each sweep runs every variant for 20 mixed-workload runs (80% reads) and 20 read-only runs.
+All experiments ran on 5 CloudLab nodes (Clemson cluster) over gRPC, with one benchmark client per node (128 workers each). Each sweep runs every swept variant for 20 mixed-workload runs (80% reads) and 20 read-only runs. The sweeps currently run `raft`, `netelect.raft` and `netelect.jacobson`; the `netelect.ci` configs are kept but not swept.
 
 **Variants** (one cluster config each, `config/cluster.<variant>[.<scenario>].json`):
 
@@ -197,7 +201,7 @@ All experiments ran on 5 CloudLab nodes (Clemson cluster) over gRPC, with one be
 python3 scripts/analyze_sweep.py      # writes results/report.md and results/plots/*.png
 ```
 
-It reports trimmed-mean throughput and latency (best and worst run dropped), run-to-run stability, and, from the server logs, leadership metrics: migration success rate and time, petition rate and petitioners, accepted petitions, election message counts, and which nodes win elections. The write-ups in [EXPERIMENT.md](EXPERIMENT.md) are based on these outputs.
+It reports trimmed-mean throughput and latency (best and worst run dropped), run-to-run stability, and, from the server logs, leadership metrics: migration success rate and time, petition rate and petitioners, accepted petitions, election message counts, and which nodes win elections. The write-ups in [EXPERIMENT.md](EXPERIMENT.md) are based on these outputs, except its WAN section, which still reports an earlier batch of runs ([KNOWN_ISSUES.md D1](KNOWN_ISSUES.md#d1-experimentmd-wan-section-uses-an-earlier-batch)).
 
 ## Experiment data
 
@@ -249,6 +253,8 @@ The NetElect protocol itself (penalty formula, petition flow, eligibility, Jacob
 - **Transport.** frugal uses UDP; this implementation offers mock, gRPC and TCP transports.
 
 ## Limitations
+
+Known bugs and planned fixes are tracked separately in [KNOWN_ISSUES.md](KNOWN_ISSUES.md). By design, the implementation also has these limitations:
 
 - No persistence: all state is in memory; a restarted node must be re-seeded by the leader.
 - No log compaction or snapshotting: the log grows without bound.

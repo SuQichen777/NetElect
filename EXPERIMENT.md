@@ -1,5 +1,11 @@
 # Experiment Reports
 
+> **Status.** These write-ups predate the fixes planned in [KNOWN_ISSUES.md](KNOWN_ISSUES.md) and will be rewritten after the experiments are re-run. Until then:
+> - The **WAN section** reports runs 33–52 (four variants, an earlier CloudLab allocation). `results/report.md` and the current analysis configuration use runs 53–72 (three variants); see [D1](KNOWN_ISSUES.md#d1-experimentmd-wan-section-uses-an-earlier-batch) and [M1](KNOWN_ISSUES.md#m1-results-are-sensitive-to-the-cloudlab-allocation).
+> - The **baseline and failure** numbers match `results/report.md`, except for the `netelect-CI` rows, which are not part of the current analysis ([D2](KNOWN_ISSUES.md#d2-experimentmd-baseline-and-failure-sections-include-the-ci-variant)).
+> - The **`petition_direct_election` comparison** is not yet written up; its numbers are in `results/report.md`.
+> - Petition acceptance as described here ("a majority of petitions") is stronger than what the code does ([C1](KNOWN_ISSUES.md#c1-self-petitions-count-toward-the-petition-quorum)).
+
 ## Benchmark (Fault-Free Baseline)
 
 ### Goal
